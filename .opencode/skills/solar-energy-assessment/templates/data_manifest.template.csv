@@ -1,0 +1,9 @@
+path,category,source,licence,resolution,date_accessed,size_mb,sha256,notes
+01_raw/boundary/wards.geojson,boundary,City GIS / ArcGIS FeatureServer,Check with authority,vector,<DATE>,,,Validated topology; 30 wards
+01_raw/buildings/footprints.gpkg,buildings,Google Open Buildings v3,CC BY 4.0,vector,<DATE>,,,Conflated with OSM/Microsoft
+01_raw/heights/gba.parquet,heights,GlobalBuildingAtlas,CC BY-NC 4.0,3 m,<DATE>,,,Per-building LoD1
+01_raw/canopy/meta_chm.tif,canopy,Meta/WRI,CC BY 4.0,1 m,<DATE>,,,Mosaicked and reprojected
+01_raw/dtm/copernicus.tif,dtm,Copernicus GLO-30,Free attribution,30 m,<DATE>,,,Reprojected to 2 m
+02_processed/dsm_2m.tif,dsm,Derived,Derived,2 m,<DATE>,,,DTM + max(building, canopy)
+02_processed/solar_annual.tif,solar,ArcGIS Raster Solar Radiation,Derived,2 m,<DATE>,,,Annual kWh/m2
+06_outputs/tables/building_results.csv,results,Derived,Derived,building,<DATE>,,,Capacity and generation
